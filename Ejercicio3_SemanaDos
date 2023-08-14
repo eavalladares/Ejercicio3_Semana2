@@ -1,0 +1,29 @@
+﻿namespace ejerciciosSemana2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //Desarrollar un programa que solicite al usuario un numero entero
+            //y mostrar en pantalla un mensaje que indique al usuario si se trata
+            //de un numero para o de un numero impar
+
+            Console.WriteLine("Par o Impar");
+            Console.WriteLine("Digite un numero entero: ");
+            int n1 = int.Parse(Console.ReadLine());
+
+            if (n1 % 2 == 0)
+            {
+                Console.WriteLine($"el numero {n1} es un numero par");
+            }
+            else
+            {
+                Console.WriteLine($"el numero {n1} es un numero inpar");
+            }
+
+            //no cerrar la console
+            Console.ReadLine();
+        }
+
+    }
+}
